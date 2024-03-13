@@ -1,6 +1,10 @@
-#include "ejercicio2.h"
+#include <iostream>
 
-ejercicio2::ejercicio2()
+using namespace std;
+
+int main(int argc, char *argv[])
 {
 
+    return 0;
 }
+
