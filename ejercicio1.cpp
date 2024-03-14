@@ -1,8 +1,3 @@
-/*hacer un programa que entregue el numero de billetes y monedas
-de cada denominacion para completar la cantiad deseada.
-billetes: $5000; $20000; $10000; $5000; $2000; $1000.
-monedas: $500; $200; $100; $50.*/
-
 #include <iostream>
 
 using namespace std;
