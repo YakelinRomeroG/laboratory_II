@@ -10,7 +10,7 @@ int conver_cade_num(string cadena) {
         char caracter = cadena[i];
         int valorcaracter = caracter - '0'; // Convertir el carácter a su valor numérico
 
-        numero = numero * 10 + valorcaracter; // número se *10 y se le suma valorcaracter para construir en número entero
+        numero = numero * 10 + valorcaracter; // número se *10 y se le suma valorcaracter para construir un número entero
     }
 
     return numero;

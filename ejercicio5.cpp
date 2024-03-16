@@ -1,6 +1,3 @@
-#include "ejercicio5.h"
+#include <iostream>
 
-ejercicio5::ejercicio5()
-{
 
-}

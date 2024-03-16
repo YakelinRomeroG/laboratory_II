@@ -2,10 +2,6 @@
 #define EJERCICIO5_H
 
 
-class ejercicio5
-{
-public:
-    ejercicio5();
-};
+int ejercicio5();
 
 #endif // EJERCICIO5_H
