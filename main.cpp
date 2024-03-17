@@ -5,6 +5,8 @@
 #include "ejercicio4.h"
 #include "ejercicio5.h"
 #include"ejercicio6.h"
+#include"ejercicio7.h"
+
 
 
 #include "ejercicio_11.h"
@@ -15,6 +17,6 @@ using namespace std;
 
 int main()
 {
-    ejercicio_12();
+    ejercicio7();
     return 0;
 }
