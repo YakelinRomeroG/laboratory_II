@@ -8,12 +8,13 @@
 
 
 #include "ejercicio_11.h"
+#include "ejercicio_12.h"
 #include "ejercicio_14.h"
 
 using namespace std;
 
 int main()
 {
-    ejercicio6();
+    ejercicio_12();
     return 0;
 }

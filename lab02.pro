@@ -11,6 +11,7 @@ SOURCES += \
         ejercicio5.cpp \
         ejercicio6.cpp \
         ejercicio_11.cpp \
+        ejercicio_12.cpp \
         ejercicio_14.cpp \
         main.cpp
 
@@ -22,4 +23,5 @@ HEADERS += \
     ejercicio5.h \
     ejercicio6.h \
     ejercicio_11.h \
+    ejercicio_12.h \
     ejercicio_14.h
