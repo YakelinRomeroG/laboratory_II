@@ -1,17 +1,17 @@
-/*#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
-#include <algorithm>
 #include <stdlib.h>
 
 using namespace std;
 
-//Prototipos de funciones
+// Prototipos de funciones
 void vaciar_asientos(char **& cine, int fila, int columna);
 void mostrar_asientos(char ** cine, int fila, int columna);
 void reservar(char **& cine, int fila, int columna);
 void eliminar_reserv(char **& cine, int fila, int columna);
 void menu(int &opc, int fila, int columna, char **& cine);
+void liberar_memoria(char **& cine, int fila);
 
 void vaciar_asientos(char **& cine, int fila, int columna) {
     cine = new char*[fila];
@@ -25,20 +25,26 @@ void vaciar_asientos(char **& cine, int fila, int columna) {
 
 void mostrar_asientos(char ** cine, int fila, int columna) {
     cout << "Estado de los asientos:" << endl;
-    cout << "  ";
+    cout << " |";
     for (int j = 0; j < columna; j++) {
-        cout << j + 1 << " ";
-    }
+        if( j < 9){
+            cout<<"0";   //Agrega un cero delante de los números del 1 al 9
+        }
+        cout << j + 1 << "|";
+        }
     cout << endl;
     char letra = 'A';
     for (int i = 0; i < fila; i++) {
-        cout << letra++ << " ";
+        cout << letra++ << "|";
         for (int j = 0; j < columna; j++) {
-            if (cine[i][j] == ' ') {
-                cout << "O "; // Asiento disponible
+                if (cine[i][j] == ' ') {
+                cout << " O"; // Asiento disponible
+                cout<<"|";
             } else {
-                cout << "X "; // Asiento reservado
+                cout << " X"; // Asiento reservado
+                cout<<"|";
             }
+
         }
         cout << endl;
     }
@@ -115,31 +121,28 @@ void menu(int &opc, int fila, int columna, char **& cine) {
     }
 }
 
+void liberar_memoria(char **& cine, int fila) {
+    for (int i = 0; i < fila; i++) {
+        delete[] cine[i];
+    }
+    delete[] cine
+;
+}
+
 int ejercicio_11() {
     const int filas = 15;
     const int columnas = 20;
 
-    // Declarar e inicializar la matriz de asientos
-    char *cine = new char[filas];
-    for (int i = 0; i < filas; ++i) {
-        cine[i]= new char[columnas];
-    }
+    char **cine;
+    vaciar_asientos(cine, filas, columnas);
 
-    // Vaciar los asientos
-    //vaciar_asientos(cine, filas, columnas);
-
-    int opc;
+    int opcion = 0;
     do {
-        // Llama al menú dentro de un bucle para que se repita
-        //menu(opc, filas, columnas, cine);
-    } while (opc != 4);  // Sale del bucle cuando se elige la opción 4
+        menu(opcion, filas, columnas, cine);
+    } while (opcion != 4);
 
-    // Liberar memoria
-    for (int i = 0; i < filas; ++i) {
-        delete[] cine[i];
-    }
-    delete[] cine;
+    liberar_memoria(cine, filas);
 
     return 0;
 }
-*/
+

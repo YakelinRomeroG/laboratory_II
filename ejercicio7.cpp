@@ -18,6 +18,7 @@ int ejercicio7() {
 
             while (i < cadena.length() && cadena[i] == caden) { // Buscamos el próximo carácter que sea diferente de caden
                 i++;
+
             }
         }
 

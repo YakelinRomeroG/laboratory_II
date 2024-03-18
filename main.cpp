@@ -18,6 +18,6 @@ using namespace std;
 
 int main()
 {
-    ejercicio7();
+    ejercicio9();
     return 0;
 }
