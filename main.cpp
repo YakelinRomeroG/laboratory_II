@@ -9,7 +9,7 @@
 #include"ejercicio8.h"
 #include"ejercicio9.h"
 
-
+#include "ejercicio_10.h"
 #include "ejercicio_11.h"
 #include "ejercicio_12.h"
 #include "ejercicio_14.h"
@@ -18,6 +18,6 @@ using namespace std;
 
 int main()
 {
-    ejercicio9();
+    ejercicio5();
     return 0;
 }

@@ -13,6 +13,7 @@ SOURCES += \
         ejercicio7.cpp \
         ejercicio8.cpp \
         ejercicio9.cpp \
+        ejercicio_10.cpp \
         ejercicio_11.cpp \
         ejercicio_12.cpp \
         ejercicio_14.cpp \
@@ -28,6 +29,7 @@ HEADERS += \
     ejercicio7.h \
     ejercicio8.h \
     ejercicio9.h \
+    ejercicio_10.h \
     ejercicio_11.h \
     ejercicio_12.h \
     ejercicio_14.h
