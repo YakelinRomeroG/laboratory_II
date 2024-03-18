@@ -3,33 +3,25 @@
 
 using namespace std;
 
-bool letras(char c) {
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
-}
-
 int ejercicio7() {
-    cout<<"Ingrese una cadena que incluya letras y números: "<<endl;
-    string cadena;
-    cin>>cadena;
+        cout << "Ingrese una cadena de caracteres: "; //el usuario ingresa la cadena de caracteres
+        string cadena;
+        cin >> cadena;
 
-    cout << "Cadena original: " << cadena << endl;
+        cout << "Original: " << cadena << endl;
 
-    cout << "Letras: ";
-    for(char c : cadena) {
-        if(letras(c)) {
-            cout << c;
+       string ca_sin_repetir;
+       size_t i = 0;
+        while (i < cadena.length()) { // ciclo para iterar en los caracteres de la cadena original
+            char caden = cadena[i];
+            ca_sin_repetir += caden;
+
+            while (i < cadena.length() && cadena[i] == caden) { // Buscamos el próximo carácter que sea diferente de caden
+                i++;
+            }
         }
+
+        cout << "Sin repetir: " << ca_sin_repetir << endl;
+
+        return 0;
     }
-
-    cout << "\n";
-
-    cout << "Números: " ;
-    for(char c : cadena) {
-        if(! letras(c) && c != ' ') {
-            cout << c;
-        }
-    }
-    cout << "\n";
-
-    return 0;
-}

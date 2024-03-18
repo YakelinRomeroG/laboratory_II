@@ -6,7 +6,8 @@
 #include "ejercicio5.h"
 #include"ejercicio6.h"
 #include"ejercicio7.h"
-
+#include"ejercicio8.h"
+#include"ejercicio9.h"
 
 
 #include "ejercicio_11.h"

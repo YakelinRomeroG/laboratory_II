@@ -3,5 +3,4 @@
 
 
 int ejercicio7();
-
 #endif // EJERCICIO7_H
