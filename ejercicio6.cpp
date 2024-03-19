@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include<string>
 
@@ -11,8 +12,8 @@ int ejercicio6() {
     cin >> palabra;
 
     // Verificar si la palabra ingresada está en mayúsculas
-    int i = 0;
-    while (i < palabra.length() && pal_may) {
+    size_t i = 0;
+    while ( i < palabra.length() && pal_may) {
         char c = palabra[i];
         if (!((c >= 'A' && c <= 'Z') || c == '-')) {
             pal_may = false;
@@ -39,3 +40,4 @@ int ejercicio6() {
 
     return 0;
 }
+

@@ -21,6 +21,6 @@ using namespace std;
 
 int main()
 {
-    ejercicio_17();
+    ejercicio6();
     return 0;
 }
